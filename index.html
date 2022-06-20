@@ -6,36 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible form validation</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
     <header>
-        <h1 tabindex="0"> Accessible Form Validation </h1>
+        <h1> Accessible Form Validation </h1>
     </header>
 
 
     <main>
         <form id="sign-up">
-            <h2 tabindex="0"> Sign Up </h2>
+            <h2> Sign Up </h2>
             <div class="fname">
                 <label for="firstname"> First Name </label>
-                <input type="text" name="firstname" id="fname" required aria-required="true" />
+                <input type="text" name="firstname" id="firstname" required aria-required="true" />
             </div>
             <div class="lname">
                 <label for="lastname"> Last Name </label>
-                <input type="text" name="lastname" id="lname" required aria-required="true" />
+                <input type="text" name="lastname" id="lastname" required aria-required="true" />
             </div>
 
             <div class="email">
                 <label for="email"> Email </label>
-                <input type="email" name="email" id="email" required aria-required="true" aria-invalid="true" aria-descibedby="invalidEmailHint">
+                <input type="email" name="email" id="email" required aria-required="true" aria-invalid="true" aria-describedby="invalidEmailHint">
                 <p class="hint hidden" id="invalidEmailHint"> Invalid Email Address </p>
             </div>
 
             <div class="pwd">
                 <label for="password"> Password </label>
-                <input type="password" name="password" id="pwd" required aria-required="true" aria-invalid="true" aria-descibedby="invalidPwd">
+                <input type="password" name="password" id="password" required aria-required="true" aria-invalid="true" aria-describedby="invalidPwd">
                 <p class="pwd-hint hidden" id="invalidPwd"> Your password must contain atleast 6 characters </p>
             </div>
             <div class="submit-btn">
@@ -45,7 +46,7 @@
 
     </main>
 
-
+    <script src="index.js"></script>
 </body>
 
 </html>

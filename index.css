@@ -1,0 +1,82 @@
+:root {
+    --backgroundForm: #23323B;
+    --buttonColor: #18AE87;
+    --backgroundColor: #C1BDBA;
+    --borderOutline: #45545C;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+form {
+    border: 1px solid var(--backgroundColor);
+    max-width: 50%;
+    height: auto;
+    padding: 1rem;
+    margin: auto;
+    background-color: var(--backgroundForm);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-size: 180%;
+    border-bottom: 1px dashed yellow;
+    padding: 0.5rem;
+}
+
+.fname,
+.lname,
+.email,
+.pwd {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.5rem
+}
+
+
+/* for all input types */
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: var(--backgroundForm) border: 1px solid var(--backgroundForm)
+}
+
+input {
+    color: #ffffff;
+}
+
+.submit-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+button {
+    padding: 0.5rem 4rem;
+    background-color: var(--buttonColor);
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.hint,
+.pwd-hint {
+    border: 2px solid red;
+    padding: 0.5rem;
+}
